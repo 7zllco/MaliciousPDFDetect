@@ -19,7 +19,9 @@ def uploader_file():
         print("hi")
         for f in upload:
             f.save(os.path.join(app.config['UPLOAD_FOLDER'], f.filename))
-        return 'file uploaded successfully'
+        
+        #return 'file uploaded successfully'
+        return render_template('success.html')
 
 if __name__ == '__main__':
     app.debug = True
