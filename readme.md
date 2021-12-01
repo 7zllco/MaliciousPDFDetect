@@ -26,6 +26,12 @@ $ .\myenv\Scripts\activate
 ```
 (myenv) $ deactivate
 ```
+### 3. RUN
++ Run Flask
+```
+(myenv) $ flask run
+```
+
 
 ## 🔧 Directory Structure
 ```
