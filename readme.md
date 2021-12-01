@@ -1,7 +1,7 @@
 ## ✏️ How to use 
 ### 1. Cloning
 ```
-$ git clone https://github.com/Dayflt/Backend.git
+$ git clone https://github.com/harloxx/Web-security.git
 ```
 ### 2. Make Virtual Environment & Download Requirements
 + Go to *Web-security/* directory
