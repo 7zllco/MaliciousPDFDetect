@@ -19,7 +19,6 @@ $ .\myenv\Scripts\activate
 ```
 + Go back to Web-security directory and install requirements.txt
 ```
-(myenv) $ cd ../../
 (myenv) $ pip install -r requirements.txt 
 ```
 + If you want to deactivate
