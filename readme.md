@@ -27,6 +27,7 @@ $ .\myenv\Scripts\activate
 (myenv) $ deactivate
 ```
 
+## 🔧 Directory Structure
 ```
 ├── Web-Security/                           - 백엔드 플라스크 디렉토리
     ├── app.py                              - 모듈들을 정리한 파일
