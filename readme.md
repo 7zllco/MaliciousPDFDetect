@@ -30,11 +30,12 @@ $ .\myenv\Scripts\activate
 ## 🔧 Directory Structure
 ```
 ├── Web-Security/                           - 백엔드 플라스크 디렉토리
-    ├── app.py                              - 모듈들을 정리한 파일
+    ├── requirements.txt                    - 모듈들을 정리한 파일
+    ├── app.py                              - Flask 실행 위한 파일
     └── templates/
-         ├── malicious.html                            - AI모델 알고리즘
-         ├── success.html                  - 백엔드 동영상 임시 저장 디렉토리
-         ├── upload.html                           - database ORM 정의 파일
-         └── uploads/
+         ├── malicious.html                -입력된 파일이 악성코드가 포함된 파일일 경우
+         ├── success.html                  - 입력된 파일이 정상 파일일 경우
+         ├── upload.html                   -클라이언트로부터 pdf를 받아옴
+         └── uploads/                      -클라이언트로 받아온 pdf를 저장하는 곳
 
 ```
