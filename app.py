@@ -1,7 +1,6 @@
-from flask import Flask, flash, redirect, render_template, request, url_for, send_from_directory, session
-from werkzeug.utils import secure_filename
+from flask import Flask,  render_template, request, session
+#from werkzeug.utils import secure_filename
 import os
-import time
 app = Flask(__name__)
 app.secret_key = "super secret key"
 currentPath=os.getcwd()
