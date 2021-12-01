@@ -1,3 +1,31 @@
+## ✏️ How to use 
+### 1. Cloning
+```
+$ git clone https://github.com/Dayflt/Backend.git
+```
+### 2. Make Virtual Environment & Download Requirements
++ Go to *Web-security/* directory
+```
+cd Web-security
+```
++ Make virtual environment
+```
+$ pip install virtualenv
+$ virtualenv myenv # make virtual environment
+```
++ Activate virtual environment
+```
+$ .\myenv\Scripts\activate
+```
++ Go back to Web-security directory and install requirements.txt
+```
+(myenv) $ cd ../../
+(myenv) $ pip install -r requirements.txt 
+```
++ If you want to deactivate
+```
+(myenv) $ deactivate
+```
 
 ```
 ├── Web-Security/                           - 백엔드 플라스크 디렉토리
