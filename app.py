@@ -13,7 +13,7 @@ def uploadfile():
     return render_template('upload.html')
 
 
-@app.route('/uploader', methods=['GET', 'POST'])
+@app.route('/uploader', methods=['POST'])
 def uploader_file():
     if request.method=='POST':
         upload = request.files.getlist("file[]")
