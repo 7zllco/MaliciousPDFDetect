@@ -62,8 +62,8 @@ POST /uploader
 + Response
 ```
 {
-    "benign": ['benign file list'],
-    "malicious" : ['malicious file list']
+    "benign": [benign file list],
+    "malicious" : [malicious file list]
 }
 
 ```
