@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Python Flask Multiple Files Upload</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+
+
+
+ <!--상단 progress bar -->
+ <title>Step progressbar</title>
+        <style type="text/css">
+            .container{
+                width:100%
+            }
+            .progressbar{
+                counter-reset:step;
+            }
+            .progressbar li{
+                list-style-type: none;
+                float:left;
+                width:50%;
+                position:relative;
+                text-align:center;
+            }
+            .progressbar li:before{
+                content:counter(step);
+                counter-increment:step;
+                width:30px;
+                height:30px;
+                line-height:30px;
+                border:1px solid #ddd;
+                display:block;
+                text-align: center;
+                margin: 0 auto 10px auto;
+                border-radius:50%;
+                background-color:white;
+            }
+            .progressbar li:after{
+                content:'';
+                position:absolute;
+                width:100%;
+                height:1px;
+                background-color: #ddd;
+                top:15px;
+                left:-50%;
+                z-index:-1;
+            }
+            .progressbar li:first-child:after{
+                content:none;
+            }
+            .progresbar li.active{
+                color:green;
+            }
+            .progressbar li.active:before{
+                border-color:green;
+            }
+            .progressbar li.active+li:after{
+                background-color: green;
+            }
+        </style>
+
+
+</head>
+
+
+<div id="wrapper">
+    
+    <div>
+        <img src='https://yt3.ggpht.com/ytc/AKedOLQixObmSU83Z6V74qiXDhJCTo3tO7PrHRRRJgrU=s900-c-k-c0x00ffffff-no-rj' 
+                style="width:8%; height:8%; margin-left: 10%; margin-top: 2%;margin-bottom: -1%;"><div style="clear: both;"></div>
+        <h1 style="padding: 0% 10% 1% 10%;"><strong>Web Security</strong></h1>
+        
+        
+
+    </div>
+    <p style="margin: 1% 10%;"><!--위아래 좌우, 상우하좌-->
+        <strong >
+            This PDF parser is free, simple online application that allows you to detect malicious code in your PDF file. Ewha Womans University students have decided to publish a free online tool that uses machine learning algorithm to parse data from multi PDf files. The tool works is in your bowser and nothing is stored on the server. Therefore, our tool is safe to use even for files with sensitive information.
+          </strong> 
+    </p>
+    <div class="containter">
+        <ui class="progressbar">
+            <li class="active" style="color:green"><strong>Step 1</strong></li>
+            <li class="active" style="color:green"><strong style="color:green">Step 2</strong></li>
+        </ui>
+    </div>
+
+
+</head>
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <div id="identitycard" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                            <div class="panel panel-info">
+                                <div class="panel-heading"> 
+                                    <div class="panel-title"> File(s) are succesfully parsed</div>
+                                </div>
+                                <div class="panel-body">
+        
+            <div class="alert alert-success" style="margin-bottom: -9%;">
+             <strong> Benign File </strong>
+             <div>{{benign}}</div>
+           </div>
+           
+            <div class="row">
+                <p style="padding: 8px;" class="text-center"></p>
+                    </div>
+                    <div class="row" style="padding: 10px 15px 9px;">
+                    <form method="POST" action="http://localhost:5000/uploader" enctype="multipart/form-data">
+                            <div class="form-group"> 
+                            <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 col-md-offset-3 col-sm-offset-3 col-xs-offset-2"> 
+                     </div>
+                    </div>
+            </div>                                                 
+            </div>           
+             <p>
+            <div class="alert alert-success" style="background-color:rgb(238,140,140); color:rgb(216,3,3); margin-bottom: -5%;">
+             <strong> Malicious File </strong>
+             <div>{{malicious}}</div>
+           </div>
+           
+        </p>
+            <div class="row">
+                <p style="padding: 8px;" class="text-center"></p>
+                    </div>
+                    <div class="row" style="padding: 10px 15px 9px;">
+                    <form method="POST" action="http://localhost:5000/uploader" enctype="multipart/form-data">
+                            <div class="form-group"> 
+                            <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 col-md-offset-3 col-sm-offset-3 col-xs-offset-2"> 
+                     </div>
+                    </div>
+                <div class="row text-center" style="padding-left: 20px;padding-right: 20px;">
+             <input type="submit" value="Resubmit" class="btn btn-lg btn-block btn-success" style="border-radius: 50px;">
+            </div>                                                 
+            </div>           
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+</body>
+</html>
