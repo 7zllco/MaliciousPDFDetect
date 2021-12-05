@@ -42,5 +42,28 @@ $ .\myenv\Scripts\activate
          ├── upload.html                   -클라이언트로부터 pdf를 받아옴
          ├── result.html                   -클라이언트에게 pdf parsing 결과를 보여줌
          └── uploads/                      -클라이언트로 받아온 pdf를 저장하는 곳
+```
+## 💻 API
+#### pdf upload
+```
+GET /upload
+```
+#### pdf parsing result
+```
+POST /uploader
+```
++ Request
+```
+{
+    "files" : "file[]",
+    "enctype" : "multipart/form-data"
+}
+```
++ Response
+```
+{
+    "benign": ['benign file list'],
+    "malicious" : ['malicious file list']
+}
 
 ```
