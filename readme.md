@@ -36,6 +36,7 @@ $ source myenv/bin/activate
 ## 🔧 Directory Structure
 ```
 ├── Web-Security/                           - 백엔드 플라스크 디렉토리
+    ├── package.lock.json                   - 라이브러리 관리 파일
     ├── requirements.txt                    - 모듈들을 정리한 파일
     ├── app.py                              - Flask 실행 위한 파일
     ├── output/                             - pdf의 결과가 저장되는 디렉토리
