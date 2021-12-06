@@ -1,0 +1,4 @@
+hello.pdf is Malicious
+test.pdf is Benign
+hellos.pdf is Malicious
+tests.pdf is Benign
