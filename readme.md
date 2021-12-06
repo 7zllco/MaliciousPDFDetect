@@ -47,11 +47,11 @@ $ source myenv/bin/activate
          └── uploads/                      -클라이언트로 받아온 pdf를 저장하는 곳
 ```
 ## 💻 API
-#### pdf upload
+#### main page, pdf upload
 ```
 GET /upload
 ```
-#### pdf parsing result
+#### pdf upload & pdf parsing result
 ```
 POST /uploader
 ```
