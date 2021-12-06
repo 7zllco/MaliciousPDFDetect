@@ -1,3 +1,4 @@
+This is a project of the 'Web Security' class, a cybersecurity major at Ewha Womans University. It is a website that detects malicious pdfs through machine learning and PDF parsing.
 ## ✏️ How to use 
 ### 1. Cloning
 ```
