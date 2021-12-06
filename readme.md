@@ -4,6 +4,7 @@
 $ git clone https://github.com/harloxx/Web-security.git
 ```
 ### 2. Make Virtual Environment & Download Requirements
++ Project Environment : VMware Workstation 16 Player, Ubuntu 16.04
 + Go to *Web-security/* directory
 ```
 cd Web-security
@@ -15,7 +16,7 @@ $ virtualenv myenv # make virtual environment
 ```
 + Activate virtual environment
 ```
-$ .\myenv\Scripts\activate
+$ source myenv/bin/activate
 ```
 + Go back to Web-security directory and install requirements.txt
 ```
