@@ -1,4 +1,0 @@
-hello.pdf is M
-test.pdf is B
-hellos.pdf is M
-tests.pdf is B
