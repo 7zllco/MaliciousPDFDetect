@@ -1,5 +1,5 @@
 from flask import Flask,  render_template, request, session
-#from werkzeug.utils import secure_filename
+
 import os
 app = Flask(__name__)
 app.secret_key = "super secret key"
@@ -16,36 +16,28 @@ def output():
     malicious_list=[]
     benign_list=[]
     for file in list_file:
-        if (file.split(' ')[2]=="M"):
+        if (file.split(' ')[2]=="Malicious"):
             malicious_list.append(file.split(' ')[0])
         else:
             benign_list.append(file.split(' ')[0])
     return(malicious_list,benign_list)
 
-#사용자가 파일 업로드
+#사용자가 pdf 파일 업로드
 @app.route('/upload')
 def uploadfile():
     return render_template('upload.html')
 
-
+#pdf 파싱 결과 리턴
 @app.route('/uploader', methods=['POST'])
 def uploader_file():
-    os.systen("sh output/code.sh")
     if request.method=='POST':
         upload = request.files.getlist("file[]")
         for f in upload:
             f.save(os.path.join(app.config['UPLOAD_FOLDER'], f.filename))
+        os.system("sh output/code.sh")
         malicious,benign=output()
         return render_template('result.html',benign=benign,malicious=malicious)
-        #test=True
-        #if (test==False):
-        #    return render_template('success.html')
-        #else:
-        #    return render_template('result.html',benign=benign,malicious=malicious)
-            #return render_template('jsonTest.html',malicious=malicious)
-        #return 'file uploaded successfully'
-        #return render_template('malicious.html')
-
+        
 if __name__ == '__main__':
     app.debug = True
     app.run()
