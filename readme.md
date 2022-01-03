@@ -1,4 +1,18 @@
 This is a project of the 'Web Security' class, a cybersecurity major at Ewha Womans University. It is a website that detects malicious pdfs through machine learning and PDF parsing.
+
+## testing
+
+This is the main page. You can upload pdf files more than one.<br/>
+_/upload_ <br/>
+![image](https://user-images.githubusercontent.com/79822913/147897628-d1b3e6fb-0504-4043-9b96-a7a41ccf2bb0.png)
+
+<br/><br/>
+After pdf parsing, results are displayed <br/>
+_/uploader_
+![image](https://user-images.githubusercontent.com/79822913/147897642-3e23a61b-fb2e-494f-954d-501b1624f4cf.png)
+
+
+
 ## ✏️ How to use 
 ### 1. Cloning
 ```
