@@ -8,7 +8,7 @@ _/upload_ <br/>
 
 <br/><br/>
 After pdf parsing, results are displayed <br/>
-_/uploader_
+_/uploader_<br/>
 ![image](https://user-images.githubusercontent.com/79822913/147897642-3e23a61b-fb2e-494f-954d-501b1624f4cf.png)
 
 
