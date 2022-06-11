@@ -2,6 +2,12 @@ This is a project of the 'Web Security' class, a cybersecurity major at Ewha Wom
 
 ## testing
 
+
+
+https://user-images.githubusercontent.com/79822913/173197709-1891cb5c-8194-4e81-b0a0-08746a96932a.mp4
+
+
+<br/><br/>
 This is the main page. You can upload pdf files more than one.<br/>
 _/upload_ <br/>
 ![image](https://user-images.githubusercontent.com/79822913/147897628-d1b3e6fb-0504-4043-9b96-a7a41ccf2bb0.png)
