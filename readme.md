@@ -1,22 +1,40 @@
-This is a project of the 'Web Security' class, a cybersecurity major at Ewha Womans University. It is a website that detects malicious pdfs through machine learning and PDF parsing.
+# 👿PDF 파싱 & 감염 PDF 탐지👿
+<br>
 
-## testing
+<h2>Ⅰ. 프로젝트 소개 </h2>
+<h3> <개요> </h3>
+ • PDF를 파싱하여 구조를 분석하고, 감염 여부를 판단하는 웹 서비스<br>
+<br>
+
+<h3> <배경> </h3>
+ • 매우 빈번히 사용되는 문서 형식인 PDF에 악의적인 코드가 심어졌을때 큰 피해가 발생할 수 있음을 인지<br>
+<br>
 
 
+<h2>Ⅱ. 프로젝트 목표 </h2>
+ • 각종 정상 PDF와 감염 PDF를 파싱하여 구조를 분석<br>
+ • 머신 러닝 모델에 해당 PDF들의 특성을 학습시키고, 감염 여부를 판별하는 서비스를 제공<br>
+<br>
+
+<h2>Ⅲ. 주요 화면 및 시연 영상 </h2>
+<h3>1. 메인 화면 </h3>
+_/upload_ <br>
+
+![image](https://user-images.githubusercontent.com/79822913/147897628-d1b3e6fb-0504-4043-9b96-a7a41ccf2bb0.png)<br>
+해당 화면에서 감염 여부를 판별하고자 하는 PDF를 하나 이상 업로드<br>
+
+<h3>2. 결과 화면</h3>
+_/uploader_<br>
+
+![image](https://user-images.githubusercontent.com/79822913/147897642-3e23a61b-fb2e-494f-954d-501b1624f4cf.png)<br>
+업로드된 PDF의 감염 여부를 출력<br>
+
+<h3>3. 시연 영상</h3>
 
 https://user-images.githubusercontent.com/79822913/173197709-1891cb5c-8194-4e81-b0a0-08746a96932a.mp4
 
-
-<br/><br/>
-This is the main page. You can upload pdf files more than one.<br/>
-_/upload_ <br/>
-![image](https://user-images.githubusercontent.com/79822913/147897628-d1b3e6fb-0504-4043-9b96-a7a41ccf2bb0.png)
-
-<br/><br/>
-After pdf parsing, results are displayed <br/>
-_/uploader_<br/>
-![image](https://user-images.githubusercontent.com/79822913/147897642-3e23a61b-fb2e-494f-954d-501b1624f4cf.png)
-
+<br>
+<br>
 
 
 ## ✏️ How to use 
